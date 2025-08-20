@@ -70,6 +70,86 @@ This system is specifically designed to work with iPhone Continuity Camera, allo
 - Input: 224x224 RGB images
 - Output: Top-3 predictions with confidence scores
 
+## Technical Implementation
+
+### AI/ML Approach
+This system uses a hybrid deep learning approach combining:
+
+**Computer Vision Pipeline:**
+- **Image Preprocessing**: Color constancy correction, VARI (Vegetation Atmospherically Resistant Index) channel extraction, and data augmentation
+- **Feature Extraction**: MobileViT-XXS architecture for efficient mobile inference
+- **Multi-class Classification**: 27 plant stress categories with confidence scoring
+- **Real-time Processing**: Frame skipping and optimized inference pipeline
+
+**Model Architecture:**
+- **Backbone**: MobileViT-XXS (Mobile Vision Transformer)
+- **Input Processing**: 224x224 RGB image normalization
+- **Feature Learning**: Self-attention mechanisms for capturing spatial relationships
+- **Classification Head**: Softmax output for multi-class probability distribution
+- **Optimization**: Mixed precision training and quantization for deployment
+
+### Tools and Frameworks
+
+**Deep Learning Framework:**
+- **PyTorch**: Core deep learning framework for model development and training
+- **TorchVision**: Computer vision utilities and pre-trained models
+- **timm**: PyTorch Image Models library for MobileViT implementation
+
+**Computer Vision:**
+- **OpenCV**: Real-time image processing and camera integration
+- **PIL/Pillow**: Image manipulation and preprocessing
+- **NumPy**: Numerical computations and array operations
+
+**Data Processing:**
+- **Pandas**: Dataset analysis and manipulation
+- **scikit-learn**: Metrics calculation and data preprocessing
+- **Matplotlib**: Visualization and plotting
+
+**Hardware Acceleration:**
+- **Apple Metal Performance Shaders (MPS)**: GPU acceleration on Apple Silicon
+- **CUDA**: NVIDIA GPU support for training and inference
+- **ONNX**: Model optimization and cross-platform deployment
+
+**Development Tools:**
+- **TensorBoard**: Training visualization and monitoring
+- **Jupyter Notebooks**: Data analysis and experimentation
+- **Git**: Version control and collaboration
+
+### Training Methodology
+
+**Data Preparation:**
+- **Dataset Curation**: Combined PlantVillage (50K+ images), PlantDoc (2.5K images), and FGVC2020 (2.3K images)
+- **Data Augmentation**: Random rotation, flipping, color jittering, and brightness adjustment
+- **Train/Val/Test Split**: 70/20/10 split with stratified sampling
+- **Class Balancing**: Weighted loss functions to handle imbalanced classes
+
+**Training Strategy:**
+- **Transfer Learning**: Pre-trained on ImageNet-1K for feature extraction
+- **Fine-tuning**: Domain-specific training on plant stress datasets
+- **Learning Rate Scheduling**: Cosine annealing with warm restarts
+- **Regularization**: Dropout, weight decay, and early stopping
+
+**Optimization Techniques:**
+- **Mixed Precision Training**: FP16 for faster training and reduced memory usage
+- **Gradient Clipping**: Prevents gradient explosion during training
+- **Model Checkpointing**: Saves best model based on validation accuracy
+- **Hyperparameter Tuning**: Grid search for optimal learning rates and batch sizes
+
+### Deployment Architecture
+
+**Real-time Inference Pipeline:**
+- **Frame Capture**: OpenCV camera interface with iPhone Continuity Camera support
+- **Preprocessing**: Image resizing, normalization, and tensor conversion
+- **Model Inference**: Optimized forward pass with batch processing
+- **Post-processing**: Softmax application and top-k prediction selection
+- **Result Display**: Real-time overlay with confidence scores and class labels
+
+**Performance Optimizations:**
+- **Model Quantization**: INT8 quantization for reduced model size
+- **Frame Skipping**: Process every 3rd frame for smooth video
+- **Memory Management**: Efficient tensor operations and garbage collection
+- **Error Handling**: Graceful degradation on prediction failures
+
 ## Supported Plant Stress Types
 
 ### Fruit Trees
