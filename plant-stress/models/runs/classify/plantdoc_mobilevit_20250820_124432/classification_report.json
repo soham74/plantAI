@@ -1,0 +1,177 @@
+{
+  "Apple Scab Leaf": {
+    "precision": 0.3333333333333333,
+    "recall": 0.0625,
+    "f1-score": 0.10526315789473684,
+    "support": 16.0
+  },
+  "Apple leaf": {
+    "precision": 0.9166666666666666,
+    "recall": 0.6470588235294118,
+    "f1-score": 0.7586206896551724,
+    "support": 17.0
+  },
+  "Apple rust leaf": {
+    "precision": 0.25,
+    "recall": 0.1875,
+    "f1-score": 0.21428571428571427,
+    "support": 16.0
+  },
+  "Bell_pepper leaf": {
+    "precision": 0.2857142857142857,
+    "recall": 0.18181818181818182,
+    "f1-score": 0.2222222222222222,
+    "support": 11.0
+  },
+  "Bell_pepper leaf spot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 13.0
+  },
+  "Blueberry leaf": {
+    "precision": 0.46875,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.5660377358490566,
+    "support": 21.0
+  },
+  "Cherry leaf": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1-score": 0.3333333333333333,
+    "support": 10.0
+  },
+  "Corn Gray leaf spot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 13.0
+  },
+  "Corn leaf blight": {
+    "precision": 0.68,
+    "recall": 0.9444444444444444,
+    "f1-score": 0.7906976744186046,
+    "support": 36.0
+  },
+  "Corn rust leaf": {
+    "precision": 0.6521739130434783,
+    "recall": 0.6818181818181818,
+    "f1-score": 0.6666666666666666,
+    "support": 22.0
+  },
+  "Peach leaf": {
+    "precision": 0.7368421052631579,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.7,
+    "support": 21.0
+  },
+  "Potato leaf early blight": {
+    "precision": 0.25,
+    "recall": 0.22727272727272727,
+    "f1-score": 0.23809523809523808,
+    "support": 22.0
+  },
+  "Potato leaf late blight": {
+    "precision": 0.43478260869565216,
+    "recall": 0.5,
+    "f1-score": 0.46511627906976744,
+    "support": 20.0
+  },
+  "Raspberry leaf": {
+    "precision": 0.7368421052631579,
+    "recall": 0.6363636363636364,
+    "f1-score": 0.6829268292682927,
+    "support": 22.0
+  },
+  "Soyabean leaf": {
+    "precision": 0.5,
+    "recall": 0.5833333333333334,
+    "f1-score": 0.5384615384615384,
+    "support": 12.0
+  },
+  "Squash Powdery mildew leaf": {
+    "precision": 0.6666666666666666,
+    "recall": 0.96,
+    "f1-score": 0.7868852459016393,
+    "support": 25.0
+  },
+  "Strawberry leaf": {
+    "precision": 0.75,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.7058823529411765,
+    "support": 18.0
+  },
+  "Tomato Early blight leaf": {
+    "precision": 1.0,
+    "recall": 0.06666666666666667,
+    "f1-score": 0.125,
+    "support": 15.0
+  },
+  "Tomato Septoria leaf spot": {
+    "precision": 0.30337078651685395,
+    "recall": 0.9642857142857143,
+    "f1-score": 0.46153846153846156,
+    "support": 28.0
+  },
+  "Tomato leaf": {
+    "precision": 0.3333333333333333,
+    "recall": 0.09090909090909091,
+    "f1-score": 0.14285714285714285,
+    "support": 11.0
+  },
+  "Tomato leaf bacterial spot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 20.0
+  },
+  "Tomato leaf late blight": {
+    "precision": 0.5263157894736842,
+    "recall": 0.9523809523809523,
+    "f1-score": 0.6779661016949152,
+    "support": 21.0
+  },
+  "Tomato leaf mosaic virus": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9.0
+  },
+  "Tomato leaf yellow virus": {
+    "precision": 0.3939393939393939,
+    "recall": 0.9285714285714286,
+    "f1-score": 0.5531914893617021,
+    "support": 14.0
+  },
+  "Tomato mold leaf": {
+    "precision": 0.8,
+    "recall": 0.23529411764705882,
+    "f1-score": 0.36363636363636365,
+    "support": 17.0
+  },
+  "grape leaf": {
+    "precision": 0.5333333333333333,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.5925925925925926,
+    "support": 12.0
+  },
+  "grape leaf black rot": {
+    "precision": 1.0,
+    "recall": 0.08333333333333333,
+    "f1-score": 0.15384615384615385,
+    "support": 12.0
+  },
+  "accuracy": 0.5147679324894515,
+  "macro avg": {
+    "precision": 0.5019283081941851,
+    "recall": 0.4388087535799954,
+    "f1-score": 0.40167122161446256,
+    "support": 474.0
+  },
+  "weighted avg": {
+    "precision": 0.5158364157101546,
+    "recall": 0.5147679324894515,
+    "f1-score": 0.4544316613945757,
+    "support": 474.0
+  }
+}
