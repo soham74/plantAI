@@ -1,0 +1,49 @@
+# PlantDoc dataset configuration for YOLO training
+# This file defines the dataset structure for YOLO segmentation training
+
+# Dataset paths
+path: ../data_proc  # Path to processed dataset
+train: train  # Train images folder
+val: val      # Validation images folder
+test: test    # Test images folder (optional)
+
+# Classes
+nc: 27  # Number of classes (updated based on actual PlantDoc dataset)
+
+# Class names (will be populated from classes.txt)
+names:
+  0: Apple leaf
+  1: Apple rust leaf
+  2: Apple Scab Leaf
+  3: Bell_pepper leaf
+  4: Bell_pepper leaf spot
+  5: Blueberry leaf
+  6: Cherry leaf
+  7: Corn Gray leaf spot
+  8: Corn leaf blight
+  9: Corn rust leaf
+  10: grape leaf
+  11: grape leaf black rot
+  12: Peach leaf
+  13: Potato leaf early blight
+  14: Potato leaf late blight
+  15: Raspberry leaf
+  16: Soyabean leaf
+  17: Squash Powdery mildew leaf
+  18: Strawberry leaf
+  19: Tomato Early blight leaf
+  20: Tomato leaf
+  21: Tomato leaf bacterial spot
+  22: Tomato leaf late blight
+  23: Tomato leaf mosaic virus
+  24: Tomato leaf yellow virus
+  25: Tomato mold leaf
+  26: Tomato Septoria leaf spot
+  27: healthy_leaf
+  28: leaf_spot
+  29: leaf_blight
+
+# Training parameters (can be overridden in training command)
+imgsz: 512  # Input image size
+batch: 16   # Batch size
+epochs: 100 # Number of epochs

@@ -1,0 +1,10 @@
+{
+  "device_index": 1,
+  "backend": "AVFoundation",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30.0,
+  "command_line": "--device-index 1 --resolution 1920 1080"
+}
